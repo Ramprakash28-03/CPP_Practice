@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram id="hospital_mgmt" name="Hospital Management System">
+    <mxGraphModel>
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Entities -->
+        <mxCell id="patient" value="Patient" style="shape=rectangle;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="50" y="50" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="doctor" value="Doctor" style="shape=rectangle;fillColor=#D5E8D4;" vertex="1" parent="1">
+          <mxGeometry x="250" y="50" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="appointment" value="Appointment" style="shape=rectangle;fillColor=#FFF2CC;" vertex="1" parent="1">
+          <mxGeometry x="150" y="150" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="billing" value="Billing" style="shape=rectangle;fillColor=#F8CECC;" vertex="1" parent="1">
+          <mxGeometry x="150" y="250" width="120" height="50" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <mxCell id="rel1" edge="1" source="patient" target="appointment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel2" edge="1" source="doctor" target="appointment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="rel3" edge="1" source="appointment" target="billing">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
